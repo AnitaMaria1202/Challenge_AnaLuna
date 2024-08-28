@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-col">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge_AnaLuna</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="encriptador_principal">
+    <header>
+        <div class="logo_completo">
+            <p class="logo">Encriptador</p>
+            <p class="logo_secundario">de TEXTO</p>
+        </div>
+    </header>
+    <main class="cuerpo_encriptador">
+        <section class="area_texto_principal">
+            <textarea class="cuadro_texto" id="area_texto" cols="" rows=""
+                onClick='area_texto.value=""'>Ingrese el texto aqui</textarea>
+            <div class="botones_encriptador">
+                <legend class="indicaciones-encriptador">Solo letras minúsculas y sin acentos</legend>
+                <input onclick="presionarBoton(this);" class="encriptar-texto" id="textoEncriptar" type="submit" value="Encriptar">
+                <input onclick="presionarBoton(this);" class="desencriptar-texto" id="textoDesencriptar" type="submit" value="Desencriptar">
+            </div>
+        </section>
+        <section class="encriptador_resultado">
+            <img class="imagen_resultado" id="area_resultado" src="Imagenes__challenge/Muñecp.png" alt="Cuadro resultado encriptador">
+            <p class="texto_resultadoprincipal" id="titulo_principal"><strong>Ningún mensaje fue encontrado</strong></p>
+            <p class="texto_resultadosecundario" id="titulo_secundario">Ingresa el texto que desees encriptar o desencriptar.</p>
+            <input onclick="copiarTexto();"class="copiar_texto" id="copiar" type="submit" value="Copiar">
+        </section>
+    </main>
+    <footer class="rodapie">
+        <p><strong>Desarrollado por Ana Maria Luna</strong></p>
+    </footer>
+    <script src="apps.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

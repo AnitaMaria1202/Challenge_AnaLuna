@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Tint&family=Matemasie&display=swap');
+
+:root {
+    --color-principal: #023047;
+    --color-secundario: #e36414;
+    --color-terciario: #f28f3b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-principal);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_completo {
+    position: absolute;
+    line-height: 32px;
+    min-height: 90px;
+}
+
+.logo {
+    font-family: "Anton", sans-serif;
+    padding: 20px 0px 0px 40px;
+    font-size: 1.25rem;
+    color: #E9C46A;
+    text-shadow: 0px 0px 10px var(--color-secundario);
+}
+
+.logo_secundario {
+    position: static;
+    font-family: "Anton", sans-serif;
+    padding: 0px 0px 0px 50px;
+    font-size: 2rem;
+    color: #E9C46A;
+    text-shadow: 2px 2px 3px var(--color-secundario);
+}
+
+.area_texto_principal {
+    padding: 100px 0 20px 40px;
+    display: inline block;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cuadro_texto {
+    position: relative;
+    width: 100%;
+    height: 375px;
+    outline: 0;
+    display: inline-block;
+    border: none;
+    background-color: var(--color-principal);
+    font-size: 2rem;
+    color: var(--color-secundario);
+    font-family: "Andika", sans-serif;
+    resize: none;
+}
+
+.botones_encriptador {
+    position: static;
+}
+
+.encriptar-texto {
+    position: relative;
+    width: 40%;
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: "Andika", sans-serif;
+    font-size: 1rem;
+    color: #FAF3DD;
+    border: 2px solid #E9C46A;
+    cursor: pointer;
+    margin-right: 74px;
+}
+
+.encriptar-texto:hover {
+    background-color: var(--color-terciario);
+}
+
+.desencriptar-texto {
+    position: relative;
+    width: 40%;
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 24px 0;
+    border-radius: 24px;
+    font-family: "Andika", sans-serif;
+    font-size: 1rem;
+    color: #FAF3DD;
+    border: 2px solid #E9C46A;
+    cursor: pointer;
+}
+
+.desencriptar-texto:hover {
+    background-color: var(--color-terciario);
+}
+
+.indicaciones-encriptador {
+    position: static;
+    text-align: left;
+    top: 80%;
+    left: 15%;
+    margin-bottom: 16px;
+    color: #ADB5BD;
+}
+
+.indicaciones-encriptador::before {
+    content: url(Imagenes__challenge//Vector.png);
+    margin-right: 8px;
+}
+
+.encriptador_resultado {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #E9C46A;
+    box-sizing: border-box;
+    width: 30%;
+    border-radius: 32px;
+    min-height: 100%;
+    border: 3px solid #e36414;
+    margin: 20px 30px 20px 0;
+}
+
+.imagen_resultado {
+    width: 50%;
+    padding: 10px;
+}
+
+.texto_resultadoprincipal {
+    padding: 10px 0px 0px 0px;
+    font-family: "Andika", sans-serif;
+    font-size: 1.25rem;
+    color: var(--color-principal);
+}
+
+.texto_resultadosecundario {
+    font-family: "Andika", sans-serif;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: var(--color-principal);
+}
+
+.copiar_texto {
+    width: 70%;
+    height: 60px;
+    font-size: 1rem;
+    font-family: "Andika", sans-serif;
+    background-color: var(--color-principal);
+    color: #FAF3DD;
+    border: 2px solid var(--color-secundario);
+    border-radius: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.copiar_texto:hover {
+    background-color: var(--color-terciario);
+}
+
+.rodapie {
+    background-color: #E9C46A;
+    padding: 26px;
+    color: var(--color-principal);
+    text-align: center;
+    font-family: "Andika", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+
+@media (max-width:783px) {
+    .cuerpo_encriptador {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding: 50px 0px 0px 20px;
+        font-size: 1.25rem;
+    }
+
+    .logo_secundario {
+        padding: 0px 0px 0px 30px;
+        font-size: 2rem;
+    }
+
+    .area_texto_principal {
+        padding: 150px 0 40px 1px;
+        width: 100%;
+    }
+    .cuadro_texto {
+        position: relative;
+        width: 90%;
+        height: 300px;
+        font-size: 1rem;
+    }
+
+    .indicaciones-encriptador {
+        top: 80%;
+        left: 15%;
+        font-size: 0.7rem;
+        margin-bottom: 16px;
+        margin-left: 17px;
+    }
+
+    .indicaciones-encriptador::before {
+        content: url(Imagenes__challenge//Vector.png);
+        margin-right: 5px;
+    }
+
+    .botones_encriptador {
+        position: static;
+    }
+
+    .encriptar-texto {
+        width: 300px;
+        padding: 10px 0;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    .desencriptar-texto {
+        width: 300px;
+        padding: 10px 0;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+    .encriptador_resultado {
+        margin: 20px 30px;
+        box-sizing: border-box;
+        width: auto;
+        border-radius: 32px;
+        min-height: auto;
+    }
+
+    .imagen_resultado {
+        width: 0%;
+        padding: 0px;
+    }
+
+    .texto_resultadoprincipal {
+        padding: 3px 0px 0px 0px;
+        font-size: 1.2rem;
+    }
+
+    .texto_resultadosecundario {
+        margin-top: 1px;
+        margin-bottom: 5px;
+        font-size: 1rem;
+
+    }
+
+    .copiar_texto {
+        width: 80%;
+        height: 50px;
+        font-size: 1rem;
+        border-radius: 20px;
+        padding: 5px;
+    }
+}
+@media (max-width:679px) {
+    
+    .encriptar-texto {
+        width: 150px;
+    }
+
+    .desencriptar-texto {
+        width: 150px;
+    }
+}
+@media (max-width:379px) {
+    .logo_completo {
+        position: absolute;
+        line-height: 20px;
+    }
+    .logo {
+        padding: 30px 0px 0px 20px;
+        font-size: 1rem;
+    }
+
+    .logo_secundario {
+        padding: 0px 0px 0px 40px;
+        font-size: 1.5rem;
+    }
+
+    .area_texto_principal {
+        padding: 100px 0 40px 1px;
+        width: 100%;
+    }
+    .botones_encriptador {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .encriptar-texto {
+        width: 330px;
+        padding: 10px 0;
+        border-radius: 24px;
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    .desencriptar-texto {
+        width: 330px;
+        padding: 10px 0;
+        border-radius: 24px;
+        font-size: 1rem;
+        margin: auto;
+    }
+
+}
